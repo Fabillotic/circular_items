@@ -11,6 +11,11 @@ This resource pack is meant for Minecraft version 1.18.1.
 In the tab "Releases" find the newest release. After downloading the zip file, move it directly into you resourcepacks folder.
 You don't have to unzip it!
 
+## Customizing
+To change the position of the hotbar, unzip the zip file and change the values at the top of the file ```assets/minecraft/shaders/core/include/hotbarstuff.glsl```.
+(The ones with ```#define``` at the front)
+Zip all the files again, reload the resources and it should work. (A little tinkering is necessary to get the values right.)
+
 ## Compatibility
 Although this resource pack is inspired by [DartCat25](https://github.com/DartCat25/resourcepacks)'s circular hotbar, right now the two aren't compatible without a little coding work.
 
