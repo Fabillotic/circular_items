@@ -35,6 +35,6 @@ void main() {
 		i+=2;
 		if(i <= 0) i = 0;
 		vec2 o = moveCount(i) * 16;
-		gl_Position = ProjMat * ModelViewMat * vec4(Position.xy - vec2(i * 20 - (i == 0 ? 8 : 0) + 256.0 - 128 + 16, 256.0) + o, Position.z, 1.0);
+		gl_Position = ProjMat * ModelViewMat * vec4(Position.xy - vec2(i * 20 - (i == 0 ? 8 : 0) + 256.0 - 128 + 16 - textX, 256.0 - textY) + o, Position.z, 1.0);
 	}
 }

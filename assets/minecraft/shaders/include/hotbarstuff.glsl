@@ -1,6 +1,12 @@
 #version 150
 
 #define PI 3.141592653589
+//Hard-coded location of the items and selection
+#define itemX 35.0
+#define itemY 17.0
+//Hard-coded location of the count text and durability
+#define textX 496.5
+#define textY 208.25
 
 uniform vec2 ScreenSize;
 
@@ -16,7 +22,7 @@ vec3 moveItem(vec3 Position) {
 	}
 	vec3 pos = vec3((Position.x - 12.5) - 1.75 - o, (Position.y + 20.0), Position.z); //General (0;0) kinda vector
 	
-	pos += vec3(4.0, -4.0, 0.0);
+	pos += vec3(itemX, -itemY, 0.0);
 
 	if(i > 0) {
 		float a = (i - 1) * (2 * PI / 9);
@@ -29,7 +35,7 @@ vec3 moveItem(vec3 Position) {
 
 vec2 moveSelection(int i) {
 	float a = i * (2 * PI / 9);
-	return vec2(4.0 + sin(a) * 2, 4.0 - cos(a) * 2);
+	return vec2(itemX + sin(a) * 2, itemY - cos(a) * 2);
 }
 
 vec2 moveCount(int i) {

@@ -20,8 +20,8 @@ void main() {
 		if(!(id < 2) && Position.x - 256.0 + 32 - 6 < 0.0) i--;
 		i++;
 		vec2 pos = vec2(Position.x - 20.0 * i + (i == 0 ? 10.0 : 0), Position.y);
-		pos.x += -256.0 + 128.0 - 20.0;
-		pos.y -= 256.0;
+		pos.x += -256.0 + 128.0 - 20.0 + textX;
+		pos.y -= 256.0 - textY;
 		vec2 o = moveCount(i) * 16;
 		gl_Position = ProjMat * ModelViewMat * vec4(vec3(pos + o, Position.z), 1.0);
 		vertexColor = Color;
