@@ -12,7 +12,7 @@ In the tab "Releases" find the newest release. After downloading the zip file, m
 You don't have to unzip it!
 
 ## Customizing
-To change the position of the hotbar, unzip the zip file and change the values at the top of the file ```assets/minecraft/shaders/core/include/hotbarstuff.glsl```.
+To change the position of the hotbar, unzip the zip file and change the values at the top of the file ```assets/minecraft/shaders/include/hotbarstuff.glsl```.
 (The ones with ```#define``` at the front)
 Zip all the files again, reload the resources and it should work. (A little tinkering is necessary to get the values right.)
 
