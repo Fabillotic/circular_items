@@ -2,10 +2,10 @@
 
 #define PI 3.141592653589
 //Hard-coded location of the items and selection
-#define itemX 35.0
+#define itemX 27.5
 #define itemY 17.0
 //Hard-coded location of the count text and durability
-#define textX 496.5
+#define textX 370.0
 #define textY 208.25
 
 uniform vec2 ScreenSize;
